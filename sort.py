@@ -69,11 +69,13 @@ if __name__ == '__main__':
                 A.append(line),
                 line = file_in.readline()
             print('Before:')
-            print(A)
+            for i in range(len(A)):
+                print(A[i])
             A = merge_sort(A)
             print('After:')
-            print(A)
-            file_out.write(str(A)) # Запись результата
+            for i in range(len(A)):
+                print(A[i])
+                file_out.write(A[i])# Запись результата
         # Строка
         elif (param_data_type == '-s'):
             A = [] # Рабочий массив
@@ -82,11 +84,13 @@ if __name__ == '__main__':
                 A.append(line),
                 line = file_in.readline()
             print('Before:')
-            print(A)
+            for i in range(len(A)):
+                print(A[i])
             A = merge_sort(A)
             print('After:')
-            print(A)
-            file_out.write(str(A)) # Запись результата
+            for i in range(len(A)):
+                print(A[i])
+                file_out.write(A[i])# Запись результата
         else:
             # Аварийное завершение программы и выход, если не указан тип данных
             print('Error! Tell me the type')
